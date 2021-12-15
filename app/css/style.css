@@ -17,6 +17,30 @@
     box-sizing: content-box;
 }
 
+.section-head{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section-head__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.section-head__subtitle{
+    display: inline-block;
+    width: 470px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
 /* Header */
 
 .header{
@@ -24,6 +48,8 @@
     left: 0;
     top: 0;
     width: 100%;
+
+    z-index: 3;
 }
 
 .header__body{
@@ -65,6 +91,13 @@
 }
 
 /* Intro */
+.intro{
+    position: relative;
+    background: #eee;
+
+    z-index: 2;
+}
+
 .intro__body{
     padding: 184px 0 191px;
 }
@@ -125,19 +158,23 @@
 /* Services */
 .services{
     background: #FAFAFA;
+    margin-top: -110px;
 }
 
 .services__body{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
+    z-index: auto;
 }
-
-.service-card{
-    max-width: calc(100% / 3 - 30px);
+.services__service-card{
     margin: 15px;
+}
+.service-card{
+    width: calc(100% / 3 - 30px);
     background: #fff;
     padding: 40px 35px;
+    z-index: 3;
 }
 
 .service-card>*:not(:last-child){
@@ -163,5 +200,53 @@
     font-size: 14px;
     line-height: 143%;
     letter-spacing: 0.2px;
+    color: #737373;
+}
+
+/* Features */
+.features{
+    padding: 80px 0;
+    background: #FAFAFA;
+}
+
+.features__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.features__feature-card{
+    margin: 15px;
+}
+.feature-card{
+    padding: 30px;
+    background: #fff;
+    width: calc(100% / 4 - 30px);
+    text-align: center;
+}
+
+.feature-card>*:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.feature-card__img{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #000;
+}
+
+.feature-card__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.feature-card__text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
     color: #737373;
 }
