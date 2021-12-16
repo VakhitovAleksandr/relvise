@@ -34,6 +34,10 @@ a{
     padding-bottom: 100px;
 }
 
+.section-head_80{
+    padding-bottom: 80px;
+}
+
 .section-head__title{
     font-weight: 700;
     font-size: 40px;
@@ -270,7 +274,7 @@ a{
 .advances__body{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 15px;
+    margin: 0 -15px;
 }
 
 .advances__advance-card{
@@ -383,4 +387,150 @@ a{
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #737373;
+}
+
+/* Clients */
+.clients{
+    background: #FAFAFA;
+}
+
+.clients__body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0 138px;
+}
+
+.clients__item{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.clients__line-bottom{
+    padding-bottom: 77px;
+    background: #252B42;
+}
+
+.clients__form-sub{
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 195px;
+
+}
+
+.form-sub{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    background: #17213C;
+    border-radius: 2px;
+}
+
+.form-sub__title{
+    max-width: 266px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.form-sub__input-block{
+    width: 450px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    font-size: 0;
+}
+
+.form-sub__input{
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #737373;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-sub__button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-weight: 400;
+    padding: 0 22px;
+    border: none;
+    background: #FF7B47;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Contacts */
+.contacts{
+    padding: 80px 0 148px;
+    background: #F3F3F3;
+}
+
+.contacts__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.contacts__contact-card{
+    width: calc(100% / 3);
+}
+
+.contact-card{
+    padding: 53px 50px;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-card>*:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.contact-card__link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.contact-card__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.contact-card__button{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #FF7B47;
+
+    border: none;
+    background: none;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
