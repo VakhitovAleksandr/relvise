@@ -168,10 +168,10 @@
     z-index: auto;
 }
 .services__service-card{
+    width: calc(100% / 3 - 30px);
     margin: 15px;
 }
 .service-card{
-    width: calc(100% / 3 - 30px);
     background: #fff;
     padding: 40px 35px;
     z-index: 3;
@@ -214,13 +214,15 @@
     flex-wrap: wrap;
     margin: 0 -15px;
 }
+
 .features__feature-card{
+    width: calc(100% / 4 - 30px);
     margin: 15px;
 }
+
 .feature-card{
     padding: 30px;
     background: #fff;
-    width: calc(100% / 4 - 30px);
     text-align: center;
 }
 
@@ -249,4 +251,52 @@
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #737373;
+}
+
+/* Advances */
+
+.advances{
+    padding: 125px 0 80px;
+    background: #FAFAFA;
+}
+
+.advances__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+}
+
+.advances__advance-card{
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+}
+
+.advance-card{
+    background: #fff;
+}
+
+.advance-card__body{
+    padding: 30px;
+}
+
+.advance-card__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 15px;
+}
+
+.advance-card__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.advance-card__img{
+    min-height: 138px;
+    background: #000;
 }
