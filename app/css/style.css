@@ -180,9 +180,9 @@ button{
     z-index: auto;
 }
 .services__service-card{
+    width: calc(100% / 3 - 30px);
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3 - 30px);
     margin: 15px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
@@ -233,12 +233,14 @@ button{
 
 .features__body{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
 
 .features__feature-card{
     width: calc(100% / 4 - 30px);
+    flex-basis: 200px;
     margin: 15px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
@@ -291,6 +293,8 @@ button{
 .advances__advance-card{
     width: calc(100% / 4 - 30px);
     margin: 15px;
+    flex-basis: 230px;
+    flex-grow: 1;
 }
 
 .advance-card{
@@ -320,8 +324,15 @@ button{
 }
 
 .advance-card__img{
-    min-height: 138px;
-    background: #000;
+
+}
+
+.advance-card__img img{
+    width: 100%;
+    height: 138px;
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: middle;
 }
 
 /* About */
@@ -497,18 +508,20 @@ button{
 
 .contacts__body{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin: 0 30px;
 }
 
 .contacts__contact-card{
-    width: calc(100% / 3);
+    min-width: calc(100% / 3);
+    flex-basis: 260px;
     z-index: 1;
 }
 
 .contact-card{
-    padding: 53px 50px;
+    padding: 53px 0;
     background: #fff;
     text-align: center;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
@@ -564,6 +577,13 @@ button{
 .contacts__contact-card_active *{
     color: #fff;
     border-color: #fff;
+}
+
+@media (max-width: 869px){
+    .contacts__contact-card{
+        min-width: calc(100% - 30%);
+        margin: 15px 0;
+    }
 }
 
 /* Footer */
