@@ -1,3 +1,5 @@
+@import "./media.css";
+/* Style ohter */
 *,
 ::before,
 ::after{
@@ -15,11 +17,12 @@ a{
 }
 
 .page__body{
+    font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
 }
 
 .container{
-    max-width: 1040px;
+    max-width: 1045px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: content-box;
@@ -40,7 +43,7 @@ a{
 
 .section-head__title{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 4em;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -51,10 +54,14 @@ a{
     width: 470px;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
+}
+
+button{
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 /* Header */
@@ -93,7 +100,7 @@ a{
 
 .nav__link{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 171%;
     text-align: center;
     letter-spacing: 0.2px;
@@ -104,7 +111,6 @@ a{
 .intro{
     position: relative;
     background: #eee;
-
     z-index: 2;
 }
 
@@ -122,7 +128,7 @@ a{
 
 .main-offer__title{
     font-weight: 800;
-    font-size: 58px;
+    font-size: 5.8em;
     line-height: 138%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -136,10 +142,6 @@ a{
     color: #737373;
 }
 
-.main-offer__buttons{
-    font-size: 0;
-}
-
 .main-offer__buttons>*:not(:last-child){
     margin-right: 10px;
 }
@@ -148,7 +150,7 @@ a{
     border: none;
     background: none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 28px;
     border-radius: 37px;
     padding: 10px 36px;
@@ -178,8 +180,11 @@ a{
     z-index: auto;
 }
 .services__service-card{
+    display: flex;
+    flex-direction: column;
     width: calc(100% / 3 - 30px);
     margin: 15px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 .service-card{
     background: #fff;
@@ -192,14 +197,13 @@ a{
 }
 
 .service-card__img{
-    max-width: 48px;
+    width: 48px;
     height: 48px;
-    background: #000;
 }
 
 .service-card__title{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -207,10 +211,18 @@ a{
 
 .service-card__text{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
+}
+
+.service-card_active{
+    background: #0D5C63;
+}
+
+.service-card_active>*{
+    color: #fff;
 }
 
 /* Features */
@@ -228,6 +240,7 @@ a{
 .features__feature-card{
     width: calc(100% / 4 - 30px);
     margin: 15px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 .feature-card{
@@ -249,7 +262,7 @@ a{
 
 .feature-card__title{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 4em;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -257,14 +270,13 @@ a{
 
 .feature-card__text{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #737373;
 }
 
 /* Advances */
-
 .advances{
     padding: 125px 0 80px;
     background: #FAFAFA;
@@ -283,6 +295,7 @@ a{
 
 .advance-card{
     background: #fff;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 .advance-card__body{
@@ -291,7 +304,7 @@ a{
 
 .advance-card__title{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -300,7 +313,7 @@ a{
 
 .advance-card__text{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -333,7 +346,7 @@ a{
 
 .about-content__title{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 4em;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -342,7 +355,7 @@ a{
 
 .about-content__text{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -375,14 +388,14 @@ a{
 
 .skills__title{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
 }
 .skills__text{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -418,7 +431,6 @@ a{
     left: 30px;
     right: 30px;
     top: 195px;
-
 }
 
 .form-sub{
@@ -428,12 +440,13 @@ a{
     padding: 30px 50px;
     background: #17213C;
     border-radius: 2px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 .form-sub__title{
     max-width: 266px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #FFFFFF;
@@ -445,14 +458,13 @@ a{
     position: relative;
     display: flex;
     align-items: stretch;
-    font-size: 0;
 }
 
 .form-sub__input{
     width: 100%;
     padding: 15px 20px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -469,7 +481,7 @@ a{
     padding: 0 22px;
     border: none;
     background: #FF7B47;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #fff;
@@ -486,17 +498,24 @@ a{
 .contacts__body{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin: 0 30px;
 }
 
 .contacts__contact-card{
     width: calc(100% / 3);
+    z-index: 1;
 }
 
 .contact-card{
     padding: 53px 50px;
     background: #fff;
     text-align: center;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.contact-card__img{
+    height: 72px;
 }
 
 .contact-card>*:not(:last-child){
@@ -505,7 +524,7 @@ a{
 
 .contact-card__link{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -513,7 +532,7 @@ a{
 
 .contact-card__title{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -521,7 +540,7 @@ a{
 
 .contact-card__button{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #FF7B47;
@@ -532,6 +551,19 @@ a{
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+/* --Contacts_active */
+.contacts__contact-card_active{
+    background: #252B42;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+}
+
+.contacts__contact-card_active *{
+    color: #fff;
+    border-color: #fff;
 }
 
 /* Footer */
@@ -552,7 +584,7 @@ a{
 
 .footer-fallback__title{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -560,7 +592,7 @@ a{
 
 .footer-fallback__subtitle{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -568,7 +600,7 @@ a{
 
 .footer-fallback__button{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
@@ -588,7 +620,7 @@ a{
 
 .footer-copyring__text{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -614,7 +646,7 @@ a{
 
 .menu-footer__title{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #FFFFFF;
@@ -622,7 +654,7 @@ a{
 
 .menu-footer__link{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4em;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
