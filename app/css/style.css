@@ -16,6 +16,14 @@ a{
     text-decoration: none;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
 .page__body{
     position: relative;
     display: flex;
@@ -207,15 +215,15 @@ button{
     padding: 184px 0 191px;
 }
 
-.intro__main-offer{
-    max-width: 398px;
+.offer{
+      max-width: 398px;
 }
 
-.main-offer>*:not(:last-child){
+.offer>*:not(:last-child){
     margin-bottom: 35px;
 }
 
-.main-offer__title{
+.offer__title{
     font-weight: 800;
     font-size: 5.8em;
     line-height: 138%;
@@ -223,7 +231,7 @@ button{
     color: #252B42;
 }
 
-.main-offer__subtitle{
+.offer__subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
@@ -231,11 +239,11 @@ button{
     color: #737373;
 }
 
-.main-offer__buttons>*:not(:last-child){
+.offer__buttons>*:not(:last-child){
     margin-right: 10px;
 }
 
-.main-offer__button{
+.offer__button{
     border: none;
     background: none;
     font-weight: 700;
@@ -246,12 +254,12 @@ button{
     cursor: pointer;
 }
 
-.main-offer__button_bg{
+.offer__button_bg{
     background: #FF7B47;
     color: #fff;
 }
 
-.main-offer__button_border{
+.offer__button_border{
     border: 1px solid #0D5C63;
     color: #0D5C63;
 }
@@ -269,30 +277,29 @@ button{
     margin: -15px;
     z-index: auto;
 }
-.services__service-card{
+
+.service{
     min-width: calc(100% / 3 - 30px);
     flex-basis: 253px;
     display: flex;
     flex-direction: column;
     margin: 15px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
-}
-.service-card{
     background: #fff;
     padding: 40px 35px;
     z-index: 3;
 }
 
-.service-card>*:not(:last-child){
+.service>*:not(:last-child){
     margin-bottom: 10px;
 }
 
-.service-card__img{
+.service__img{
     width: 48px;
     height: 48px;
 }
 
-.service-card__title{
+.service__title{
     font-weight: 700;
     font-size: 2.4em;
     line-height: 133%;
@@ -300,7 +307,7 @@ button{
     color: #252B42;
 }
 
-.service-card__text{
+.service__text{
     font-weight: 500;
     font-size: 1.4em;
     line-height: 143%;
@@ -308,11 +315,11 @@ button{
     color: #737373;
 }
 
-.service-card_active{
+.service_active{
     background: #0D5C63;
 }
 
-.service-card_active>*{
+.service_active>*{
     color: #fff;
 }
 
