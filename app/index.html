@@ -21,18 +21,17 @@
         <div class="container">
             <div class="header__body">
                 <a href="./" class="header__logo">Relvise</a>
-                <nav>
 
+                <nav>
                     <ul class="menu">
                         <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
                         <li class="menu__item"><a href="#product" class="menu__link">Product</a></li>
                         <li class="menu__item"><a href="#pricing" class="menu__link">Pricing</a></li>
                         <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
                     </ul>
-
                     <button class="burger"><span></span></button>
-
                 </nav>
+
             </div>
         </div>
     </header>
@@ -100,31 +99,31 @@
                         Classical physics: Newtonian mechanics
                     </p>
                 </div>
-                <div class="features__body">
-                    <div class="features__feature-card feature-card">
-                        <div class="feature-card__img"></div>
-                        <h3 class="feature-card__title">972 +</h3>
-                        <p class="feature-card__text">Consumer Products</p>
-                    </div>
+                <ul class="features-list">
+                    <li class="features-list__card">
+                        <img class="features-list__img" src="./img/svg/users.svg" alt="users">
+                        <h3 class="features-list__title">972 +</h3>
+                        <p class="features-list__text">Consumer Products</p>
+                    </li>
 
-                    <div class="features__feature-card feature-card">
-                        <div class="feature-card__img"></div>
-                        <h3 class="feature-card__title">181 +</h3>
-                        <p class="feature-card__text">Financial Services</p>
-                    </div>
+                    <li class="features-list__card">
+                        <img class="features-list__img" src="./img/svg/sats.svg" alt="sats">
+                        <h3 class="features-list__title">181 +</h3>
+                        <p class="features-list__text">Financial Services</p>
+                    </li>
 
-                    <div class="features__feature-card feature-card">
-                        <div class="feature-card__img"></div>
-                        <h3 class="feature-card__title">98%</h3>
-                        <p class="feature-card__text">Environmental</p>
-                    </div>
+                    <li class="features-list__card">
+                        <img class="features-list__img" src="./img/svg/award.svg" alt="award">
+                        <h3 class="features-list__title">98%</h3>
+                        <p class="features-list__text">Environmental</p>
+                    </li>
 
-                    <div class="features__feature-card feature-card">
-                        <div class="feature-card__img"></div>
-                        <h3 class="feature-card__title">746 +</h3>
-                        <p class="feature-card__text">Business & Finance</p>
-                    </div>
-                </div>
+                    <li class="features-list__card">
+                        <img class="features-list__img" src="./img/svg/case.svg" alt="case">
+                        <h3 class="features-list__title">746 +</h3>
+                        <p class="features-list__text">Business & Finance</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -148,7 +147,7 @@
                             </p>
                         </div>
                         <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="">
+                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="sity">
                         </div>
                     </article>
 
@@ -161,7 +160,7 @@
                             </p>
                         </div>
                         <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="">
+                            <img class="advance-card__img" src="./img/advances/work.jfif" alt="work">
                         </div>
                     </article>
 
@@ -174,7 +173,7 @@
                             </p>
                         </div>
                         <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="">
+                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="sity">
                         </div>
                     </article>
 
@@ -187,7 +186,7 @@
                             </p>
                         </div>
                         <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="">
+                            <img class="advance-card__img" src="./img/advances/work.jfif" alt="work">
                         </div>
                     </article>
                 </div>
@@ -205,8 +204,26 @@
                     </p>
                 </div>
                 <div class="about__body">
-                    <div class="video-block"></div>
-                    <div class="about__about-content about-content">
+
+                    <div class="about__media">
+                        <div class="video">
+                            <a class="video__link" href="https://www.youtube.com/watch?v=NdH2hNUccgs">
+                                <img class="video__media" src="https://i.ytimg.com/vi/NdH2hNUccgs/maxresdefault.jpg"
+                                    alt="">
+                            </a>
+                            <button class="video__button" aria-label="Запустить видео">
+                                <svg width="25" height="30" viewBox="0 0 25 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.799805 0.800049L24.7998 15.2001L0.799805 29.6001V0.800049Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <article class="about__about-content about-content">
                         <h3 class="about-content__title">Most trusted in our field</h3>
                         <p class="about-content__text">
                             Most calendars are designed for teams.
@@ -215,8 +232,7 @@
                         </p>
                         <ul class="about__skills skills">
                             <li class="skills__item">
-                                <div class="skills__img"></div>
-                                <!-- <img class="skills__img" src="" alt=""> -->
+                                <img class="skills__img" src="./img/svg/users-2.svg" alt="users">
                                 <div class="skills__body">
                                     <h4 class="skills__title">the quick fox jumps over the lazy dog</h4>
                                     <p class="skills__text">Things on a very small scale ...</p>
@@ -224,15 +240,14 @@
                             </li>
 
                             <li class="skills__item">
-                                <div class="skills__img"></div>
-                                <!-- <img class="skills__img" src="" alt=""> -->
+                                <img class="skills__img" src="./img/svg/speed.svg" alt="speed">
                                 <div class="skills__body">
                                     <h4 class="skills__title">the quick fox jumps over the lazy dog</h4>
                                     <p class="skills__text">Things on a very small scale ...</p>
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -418,7 +433,7 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
