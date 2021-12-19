@@ -439,7 +439,7 @@ button{
 }
 
 .about__media{
-    width: 597px;
+    min-width: 597px;
 }
 
 .video{
@@ -481,6 +481,7 @@ button{
 
 .about__about-content{
     max-width: 334px;
+    padding-left: 121px;
 }
 
 .about-content{
@@ -781,11 +782,11 @@ button{
 .footer-content__body{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: -15px;
 }
 
 .menu-footer{
-    flex-basis: 200px;
     margin: 15px;
 }
 
