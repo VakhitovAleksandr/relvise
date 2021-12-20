@@ -1,12 +1,133 @@
 
-@media (max-width: 320px) {}
+@media (max-width: 991.98px) {
+    .section{
+        padding: 80px 0;
+    }
+    .page__body{
+        font-size: 60.5%;
+    }
+    .header__body{
+        justify-content: space-between;
+    }
+    .features-list__card{
+        width: calc(100% / 4 - 30px);
+    }
+    .advances{
+        padding: 80px 0;
+    }
+    .advances__advance-card{
+        width: calc(100% / 4 - 30px);
+    }
+}
+@media (max-width: 767.98px) {
+    .section{
+        padding: 40px 0;
+    }
+    .service-card{
+        width: calc(100% / 2 - 30px);
+    }
 
-@media (max-width: 575.98px) {}
+    .features-list__card{
+        width: calc(100% / 2 - 30px);
+    }
 
-@media (max-width: 767.98px) {}
+    .advances__advance-card{
+        width: calc(100% / 2 - 30px);
+    }
+    .clients-list{
+        justify-content: center;
+        align-items: stretch;
+    }
+    .clients-list__item{
+        align-items: flex-end;
+    }
+    .form-sub__input-block{
+        width: 100%;
+    }
+    .form-sub__title{
+        margin-bottom: 20px;
+    }
+    .contacts__body{
+        margin: 0;
+    }
+    .contact-card{
+        padding: 43px 0;
+    }
+}
 
-@media (max-width: 991.98px) {}
-
-@media (max-width: 1199.98px) {}
-
-@media (max-width: 1399.98px) {}
+@media (max-width: 575.98px) {
+    .contact-card{
+        width: 100%;
+    }
+    .footer-fallback__body{
+        justify-content: center;
+    }
+    .footer-fallback__button{
+        margin: 0;
+    }
+    .footer-fallback__content{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 575.98px) {
+    :root, .page__body{
+        font-size: 55%;
+    }
+    .section{
+        padding: 30px 0;
+    }
+    .offer__buttons{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__buttons>*:not(:last-child){
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .services__body{
+        margin: 0;
+    }
+    .service-card{
+        width: 100%;
+    }
+    .features-list{
+        margin: 0;
+    }
+    .features-list__card{
+        width: 100%;
+    }
+    .advances__body{
+        margin: 0;
+    }
+    .advances__advance-card{
+        width: 100%;
+    }
+    .clients-list{
+        justify-content: center;
+        align-items: stretch;
+    }
+    .clients-list__item{
+        align-items: flex-end;
+    }
+    .form-sub__input-block{
+        width: 100%;
+    }
+    .form-sub__title{
+        margin-bottom: 20px;
+    }
+    .contacts__body{
+        margin: 0;
+    }
+    .contact-card{
+        padding: 43px 0;
+    }
+    .fallback__body{
+        padding: 0;
+    }
+    .form-sub{
+        padding: 15px;
+    }
+}

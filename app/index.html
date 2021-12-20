@@ -62,35 +62,36 @@
         </section>
 
         <!-- Services -->
-        <section class="services">
+        <section class="section services">
             <div class="container">
                 <h2 class="visually-hidden">Services</h2>
 
                 <div class="services__body">
-                    <article class="service">
-                        <img class="service__img" src="./img/svg/case.svg" alt="case">
-                        <h3 class="service__title">Environmental Consulting</h3>
-                        <p class="service__text">We focus on ergonomics and meeting you where you work.</p>
+                    <article class="service-card">
+                        <img class="service-card__img" src="./img/svg/case.svg" alt="case">
+                        <h3 class="service-card__title">Environmental Consulting</h3>
+                        <p class="service-card__text">We focus on ergonomics and meeting you where you work.</p>
                     </article>
 
-                    <article class="service">
-                        <img class="service__img" src="./img/svg/shop.svg" alt="shop">
-                        <h3 class="service__title">Environmental Consulting</h3>
-                        <p class="service__text">We focus on ergonomics and meeting you where you work.</p>
+                    <article class="service-card">
+                        <img class="service-card__img" src="./img/svg/shop.svg" alt="shop">
+                        <h3 class="service-card__title">Environmental Consulting</h3>
+                        <p class="service-card__text">We focus on ergonomics and meeting you where you work.</p>
                     </article>
 
-                    <article class="service service_active">
-                        <img class="service__img" src="./img/svg/book.svg" alt="book">
-                        <h3 class="service__title">Environmental Consulting</h3>
-                        <p class="service__text">We focus on ergonomics and meeting you where you work.</p>
+                    <article class="service-card service-card_active">
+                        <img class="service-card__img" src="./img/svg/book.svg" alt="book">
+                        <h3 class="service-card__title">Environmental Consulting</h3>
+                        <p class="service-card__text">We focus on ergonomics and meeting you where you work.</p>
                     </article>
+
                 </div>
 
             </div>
         </section>
 
         <!-- Features -->
-        <section class="features">
+        <section class="section features">
             <div class="container">
                 <div class="section-head">
                     <h2 class="section-head__title">Designing Better Experience</h2>
@@ -128,7 +129,7 @@
         </section>
 
         <!-- Advances -->
-        <section class="advances">
+        <section class="section advances">
             <div class="container">
                 <div class="section-head">
                     <h2 class="section-head__title">Practice Advice</h2>
@@ -256,31 +257,41 @@
         <section class="clients">
             <div class="container">
                 <div class="clients__body">
-                    <div class="clients__item">
-                        <img class="clients__img" src="img/svg/hooli.svg" alt="hooli">
-                    </div>
 
-                    <div class="clients__item">
-                        <img class="clients__img" src="img/svg/lya.svg" alt="lya">
-                    </div>
+                    <ul class="clients-list">
+                        <li class="clients-list__item">
+                            <img class="clients-list__img" src="img/svg/hooli.svg" alt="hooli">
+                        </li>
 
-                    <div class="clients__item">
-                        <img class="clients__img" src="img/svg/leaflet.svg" alt="leaflet">
-                    </div>
+                        <li class="clients-list__item">
+                            <img class="clients-list__img" src="img/svg/lya.svg" alt="lya">
+                        </li>
 
-                    <div class="clients__item">
-                        <img class="clients__img" src="img/svg/stripe.svg" alt="stripe">
-                    </div>
+                        <li class="clients-list__item">
+                            <img class="clients-list__img" src="img/svg/leaflet.svg" alt="leaflet">
+                        </li>
 
-                    <div class="clients__item">
-                        <img class="clients__img" src="img/svg/aws.svg" alt="aws">
-                    </div>
+                        <li class="clients-list__item">
+                            <img class="clients-list__img" src="img/svg/stripe.svg" alt="stripe">
+                        </li>
 
-                    <div class="clients__item">
-                        <img class="clients__img" src="img/svg/robo.svg" alt="robo">
-                    </div>
+                        <li class="clients-list__item">
+                            <img class="clients-list__img" src="img/svg/aws.svg" alt="aws">
+                        </li>
 
-                    <form class="clients__form-sub form-sub">
+                        <li class="clients-list__item">
+                            <img class="clients-list__img" src="img/svg/robo.svg" alt="robo">
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <div class="fallback">
+
+            <div class="container">
+                <div class="fallback__body">
+                    <form class="form-sub">
                         <h2 class="form-sub__title">Subscribe For Latest Newsletter</h2>
                         <div class="form-sub__input-block">
                             <input class="form-sub__input" type="text" placeholder="Your Email">
@@ -289,11 +300,14 @@
                     </form>
                 </div>
             </div>
-            <div class="clients__line-bottom"></div>
-        </section>
+            <div class="fallback__line"></div>
+
+        </div>
+
+
 
         <!-- Contacts -->
-        <section class="contacts">
+        <section class="section contacts">
             <div class="container">
                 <div class="section-head section-head_80">
                     <h2 class="section-head__title">Get In Touch</h2>

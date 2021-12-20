@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root, .page__body{
+    font-size: 62.5%;
+}
 
 li{
     list-style: none;
@@ -28,7 +31,6 @@ a{
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     z-index: 0;
 }
@@ -55,7 +57,7 @@ a{
 
 .section-head__title{
     font-weight: 700;
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -66,7 +68,7 @@ a{
     max-width: 470px;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -93,7 +95,7 @@ button{
 
 .header__logo{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -112,7 +114,7 @@ button{
 
 .menu__link{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 171%;
     text-align: center;
     letter-spacing: 0.2px;
@@ -225,7 +227,7 @@ button{
 
 .offer__title{
     font-weight: 800;
-    font-size: 5.8em;
+    font-size: 5.8rem;
     line-height: 138%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -233,7 +235,7 @@ button{
 
 .offer__subtitle{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 150%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -247,8 +249,8 @@ button{
     border: none;
     background: none;
     font-weight: 700;
-    font-size: 1.4em;
-    line-height: 28px;
+    font-size: 1.4rem;
+    line-height: 200%;
     border-radius: 37px;
     padding: 10px 36px;
     cursor: pointer;
@@ -278,9 +280,8 @@ button{
     z-index: auto;
 }
 
-.service{
-    min-width: calc(100% / 3 - 30px);
-    flex-basis: 253px;
+.service-card{
+    width: calc(100% / 3 - 30px);
     display: flex;
     flex-direction: column;
     margin: 15px;
@@ -290,36 +291,36 @@ button{
     z-index: 3;
 }
 
-.service>*:not(:last-child){
+.service-card>*:not(:last-child){
     margin-bottom: 10px;
 }
 
-.service__img{
+.service-card__img{
     width: 48px;
     height: 48px;
 }
 
-.service__title{
+.service-card__title{
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2.4rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
 }
 
-.service__text{
+.service-card__text{
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
 }
 
-.service_active{
+.service-card_active{
     background: #0D5C63;
 }
 
-.service_active>*{
+.service-card_active>*{
     color: #fff;
 }
 
@@ -337,8 +338,7 @@ button{
 }
 
 .features-list__card{
-    min-width: calc(100% / 4 - 30px);
-    flex-basis: 227.5px;
+    width: calc(100% / 4 - 30px);
     margin: 15px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     padding: 30px;
@@ -357,7 +357,7 @@ button{
 
 .features-list__title{
     font-weight: 700;
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -365,7 +365,7 @@ button{
 
 .features-list__text{
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #737373;
@@ -385,8 +385,8 @@ button{
 }
 
 .advances__advance-card{
-    min-width: calc(100% / 4 - 30px);
-    flex-basis: 227.5px;
+    display: inline-block;
+    width: calc(100% / 4 - 30px);
     margin: 15px;
 }
 
@@ -401,7 +401,7 @@ button{
 
 .advance-card__title{
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -410,7 +410,7 @@ button{
 
 .advance-card__text{
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -491,7 +491,7 @@ button{
 
 .about-content__title{
     font-weight: 700;
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -500,7 +500,7 @@ button{
 
 .about-content__text{
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -514,7 +514,7 @@ button{
     margin-bottom: 30px;
 }
 
-.skills__item{
+.skills__itrem{
     display: flex;
 }
 
@@ -531,14 +531,14 @@ button{
 
 .skills__title{
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
 }
 .skills__text{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -547,33 +547,48 @@ button{
 /* Clients */
 .clients{
     background: #FAFAFA;
+
 }
 
 .clients__body{
     position: relative;
+    padding: 60px 0;
+}
+
+.clients-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px 0 138px;
+    margin: -15px;
+    padding: 0 20px;
+    box-sizing: content-box;
 }
 
-.clients__item{
+.clients-list__item{
     display: flex;
     justify-content: center;
-    padding: 0 30px;
+    margin: 15px;
 }
 
-.clients__line-bottom{
+/* Fallback */
+.fallback{
+    background: #FAFAFA;
+    padding-top: 20px;
+    position: relative;
+}
+.fallback__line{
     padding-bottom: 77px;
     background: #252B42;
+    transform: translateY(-60px);
+    position: relative;
+    z-index: 1;
 }
 
-.clients__form-sub{
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    top: 195px;
+.fallback__body{
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .form-sub{
@@ -589,7 +604,7 @@ button{
 .form-sub__title{
     max-width: 266px;
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2.4rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #FFFFFF;
@@ -600,14 +615,14 @@ button{
     margin-left: auto;
     position: relative;
     display: flex;
-    align-items: stretch;
+    align-itrems: stretch;
 }
 
 .form-sub__input{
     width: 100%;
     padding: 15px 20px;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -624,13 +639,14 @@ button{
     padding: 0 22px;
     border: none;
     background: #FF7B47;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #fff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
+
 
 /* Contacts */
 .contacts{
@@ -647,8 +663,7 @@ button{
 }
 
 .contacts__contact-card{
-    min-width: calc(100% / 3);
-    flex-basis: 260px;
+    width: calc(100% / 3);
     z-index: 1;
 }
 
@@ -669,7 +684,7 @@ button{
 
 .contact-card__link{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #252B42;
@@ -677,7 +692,7 @@ button{
 
 .contact-card__title{
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -685,7 +700,7 @@ button{
 
 .contact-card__button{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #FF7B47;
@@ -704,6 +719,8 @@ button{
     padding-top: 80px;
     padding-bottom: 80px;
     z-index: 2;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 30%);
+
 }
 
 .contacts__contact-card_active *{
@@ -732,7 +749,7 @@ button{
 
 .footer-fallback__title{
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2.4rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -740,7 +757,7 @@ button{
 
 .footer-fallback__subtitle{
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -748,7 +765,7 @@ button{
 
 .footer-fallback__button{
     font-weight: 700;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
@@ -768,7 +785,7 @@ button{
 
 .footer-copyring__text{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #737373;
@@ -800,7 +817,7 @@ button{
 
 .menu-footer__title{
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #FFFFFF;
@@ -808,7 +825,7 @@ button{
 
 .menu-footer__link{
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 171%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
