@@ -16,83 +16,84 @@
 
 <body class="page__body">
 
-    <!-- Header -->
+    <!-- *******************
+            Header
+    *******************-->
     <header class="header">
         <div class="container">
             <div class="header__body">
                 <a href="./" class="header__logo">Relvise</a>
-
                 <nav class="nav">
+                    <button class="burger"><span></span></button>
                     <ul class="menu">
                         <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
                         <li class="menu__item"><a href="#product" class="menu__link">Product</a></li>
                         <li class="menu__item"><a href="#pricing" class="menu__link">Pricing</a></li>
                         <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
                     </ul>
-                    <button class="burger"><span></span></button>
                 </nav>
-
             </div>
         </div>
     </header>
 
-    <!-- Main -->
+    <!-- *******************
+            Main
+    ********************-->
     <main class="main">
 
         <!-- Intro -->
         <section class="intro">
-            <div class="background-image">
-                <img class="background-image__img" src="./img/intro-bg.jfif" alt="intro-bg">
-            </div>
             <div class="container">
                 <div class="intro__body">
-
-                    <div class="offer">
+                    <div class="intro__offer offer">
                         <h1 class="offer__title">Finance and Consultancy Solution</h1>
                         <p class="offer__subtitle">We know how large objects will act, but things on a small scale.
                         </p>
                         <div class="offer__buttons">
                             <button class="offer__button offer__button_bg">Get Quote Now</button>
-                            <button class="offer__button offer__button_border">Learn More</button>
+                            <button class="offer__button offer__button_br">Learn More</button>
                         </div>
                     </div>
-
                 </div>
+            </div>
+            <!-- Фоновое изображение -->
+            <div class="background-image"><img class="background-image__img" src="./img/intro-bg.jfif" alt="intro-bg">
             </div>
         </section>
 
         <!-- Services -->
         <section class="section services">
             <div class="container">
+                <!-- ******************************** -->
                 <h2 class="visually-hidden">Services</h2>
+                <!-- ******************************** -->
 
-                <div class="services__body">
-                    <article class="service-card">
-                        <img class="service-card__img" src="./img/svg/case.svg" alt="case">
-                        <h3 class="service-card__title">Environmental Consulting</h3>
-                        <p class="service-card__text">We focus on ergonomics and meeting you where you work.</p>
+                <div class="services__inner">
+                    <article class="services__card card-services">
+                        <img class="card-services__img" src="./img/svg/case.svg" alt="case">
+                        <h3 class="card-services__title">Environmental Consulting</h3>
+                        <p class="card-services__text">We focus on ergonomics and meeting you where you work.</p>
                     </article>
 
-                    <article class="service-card">
-                        <img class="service-card__img" src="./img/svg/shop.svg" alt="shop">
-                        <h3 class="service-card__title">Environmental Consulting</h3>
-                        <p class="service-card__text">We focus on ergonomics and meeting you where you work.</p>
+                    <article class="services__card card-services">
+                        <img class="card-services__img" src="./img/svg/shop.svg" alt="shop">
+                        <h3 class="card-services__title">Environmental Consulting</h3>
+                        <p class="card-services__text">We focus on ergonomics and meeting you where you work.</p>
                     </article>
 
-                    <article class="service-card service-card_active">
-                        <img class="service-card__img" src="./img/svg/book.svg" alt="book">
-                        <h3 class="service-card__title">Environmental Consulting</h3>
-                        <p class="service-card__text">We focus on ergonomics and meeting you where you work.</p>
+                    <article class="services__card card-services card-services_active">
+                        <img class="card-services__img" src="./img/svg/book.svg" alt="book">
+                        <h3 class="card-services__title">Environmental Consulting</h3>
+                        <p class="card-services__text">We focus on ergonomics and meeting you where you work.</p>
                     </article>
-
                 </div>
-
             </div>
         </section>
 
         <!-- Features -->
         <section class="section features">
             <div class="container">
+                <!-- ******************************** -->
                 <div class="section-head">
                     <h2 class="section-head__title">Designing Better Experience</h2>
                     <p class="section-head__subtitle">
@@ -100,37 +101,39 @@
                         Classical physics: Newtonian mechanics
                     </p>
                 </div>
-                <ul class="features-list">
-                    <li class="features-list__card">
-                        <img class="features-list__img" src="./img/svg/users.svg" alt="users">
-                        <h3 class="features-list__title">972 +</h3>
-                        <p class="features-list__text">Consumer Products</p>
-                    </li>
+                <!-- ******************************** -->
+                <div class="features__inner">
+                    <div class="features__card card-features">
+                        <img class="card-features__img" src="./img/svg/users.svg" alt="users">
+                        <h3 class="card-features__title">972 +</h3>
+                        <p class="card-features__text">Consumer Products</p>
+                    </div>
 
-                    <li class="features-list__card">
-                        <img class="features-list__img" src="./img/svg/sats.svg" alt="sats">
-                        <h3 class="features-list__title">181 +</h3>
-                        <p class="features-list__text">Financial Services</p>
-                    </li>
+                    <div class="features__card card-features">
+                        <img class="card-features__img" src="./img/svg/sats.svg" alt="sats">
+                        <h3 class="card-features__title">181 +</h3>
+                        <p class="card-features__text">Financial Services</p>
+                    </div>
 
-                    <li class="features-list__card">
-                        <img class="features-list__img" src="./img/svg/award.svg" alt="award">
-                        <h3 class="features-list__title">98%</h3>
-                        <p class="features-list__text">Environmental</p>
-                    </li>
+                    <div class="features__card card-features">
+                        <img class="card-features__img" src="./img/svg/award.svg" alt="award">
+                        <h3 class="card-features__title">98%</h3>
+                        <p class="card-features__text">Environmental</p>
+                    </div>
 
-                    <li class="features-list__card">
-                        <img class="features-list__img" src="./img/svg/case.svg" alt="case">
-                        <h3 class="features-list__title">746 +</h3>
-                        <p class="features-list__text">Business & Finance</p>
-                    </li>
-                </ul>
+                    <div class="features__card card-features">
+                        <img class="card-features__img" src="./img/svg/case.svg" alt="case">
+                        <h3 class="card-features__title">746 +</h3>
+                        <p class="card-features__text">Business & Finance</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Advances -->
         <section class="section advances">
             <div class="container">
+                <!-- ******************************** -->
                 <div class="section-head">
                     <h2 class="section-head__title">Practice Advice</h2>
                     <p class="section-head__subtitle">
@@ -138,56 +141,57 @@
                         the two major realms of Classical physics: Newtonian mechanics
                     </p>
                 </div>
-                <div class="advances__body">
-                    <article class="advances__advance-card advance-card">
-                        <div class="advance-card__body">
-                            <h3 class="advance-card__title">A single source of truth</h3>
-                            <p class="advance-card__text">
+                <!-- ******************************** -->
+                <div class="advances__inner">
+                    <article class="advances__card card-advances">
+                        <div class="card-advances__body">
+                            <h3 class="card-advances__title">A single source of truth</h3>
+                            <p class="card-advances__text">
                                 Newton thought that light was made up of particles,
                                 but then it was discovered
                             </p>
                         </div>
-                        <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="sity">
+                        <div class="card-advances__img">
+                            <img class="card-advances__img" src="./img/advances/sity.jpeg" alt="sity">
                         </div>
                     </article>
 
-                    <article class="advances__advance-card advance-card">
-                        <div class="advance-card__body">
-                            <h3 class="advance-card__title">A single source of truth</h3>
-                            <p class="advance-card__text">
+                    <article class="advances__card card-advances">
+                        <div class="card-advances__body">
+                            <h3 class="card-advances__title">A single source of truth</h3>
+                            <p class="card-advances__text">
                                 Newton thought that light was made up of particles,
                                 but then it was discovered
                             </p>
                         </div>
-                        <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/work.jfif" alt="work">
+                        <div class="card-advances__img">
+                            <img class="card-advances__img" src="./img/advances/work.jfif" alt="work">
                         </div>
                     </article>
 
-                    <article class="advances__advance-card advance-card">
-                        <div class="advance-card__body">
-                            <h3 class="advance-card__title">A single source of truth</h3>
-                            <p class="advance-card__text">
+                    <article class="advances__card card-advances">
+                        <div class="card-advances__body">
+                            <h3 class="card-advances__title">A single source of truth</h3>
+                            <p class="card-advances__text">
                                 Newton thought that light was made up of particles,
                                 but then it was discovered
                             </p>
                         </div>
-                        <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/sity.jpeg" alt="sity">
+                        <div class="card-advances__img">
+                            <img class="card-advances__img" src="./img/advances/sity.jpeg" alt="sity">
                         </div>
                     </article>
 
-                    <article class="advances__advance-card advance-card">
-                        <div class="advance-card__body">
-                            <h3 class="advance-card__title">A single source of truth</h3>
-                            <p class="advance-card__text">
+                    <article class="advances__card card-advances">
+                        <div class="card-advances__body">
+                            <h3 class="card-advances__title">A single source of truth</h3>
+                            <p class="card-advances__text">
                                 Newton thought that light was made up of particles,
                                 but then it was discovered
                             </p>
                         </div>
-                        <div class="advance-card__img">
-                            <img class="advance-card__img" src="./img/advances/work.jfif" alt="work">
+                        <div class="card-advances__img">
+                            <img class="card-advances__img" src="./img/advances/work.jfif" alt="work">
                         </div>
                     </article>
                 </div>
@@ -254,9 +258,9 @@
         </section> -->
 
         <!-- Clients -->
-        <section class="clients">
+        <!-- <section class="clients">
             <div class="container">
-                <div class="clients__body">
+                <div class="clients__inner">
 
                     <ul class="clients-list">
                         <li class="clients-list__item">
@@ -286,22 +290,22 @@
 
                 </div>
             </div>
-        </section>
-        <div class="fallback">
+        </section> -->
 
+        <!-- Fullback -->
+        <div class="fullback">
             <div class="container">
-                <div class="fallback__body">
-                    <form class="form-sub">
-                        <h2 class="form-sub__title">Subscribe For Latest Newsletter</h2>
-                        <div class="form-sub__input-block">
-                            <input class="form-sub__input" type="text" placeholder="Your Email">
-                            <button class="form-sub__button">Subscribe</button>
+                <div class="fallback__inner">
+                    <form class="fallback__form form-fullback">
+                        <h2 class="form-fullback__title">Subscribe For Latest Newsletter</h2>
+                        <div class="form-fullback__input-block">
+                            <input class="form-fullback__input" type="text" placeholder="Your Email">
+                            <button class="form-fullback__button" type="submit">Subscribe</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="fallback__line"></div>
-
+            <div class="fullback__line"></div>
         </div>
 
 

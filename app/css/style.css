@@ -1,5 +1,3 @@
-
-/* Style ohter */
 *,
 ::before,
 ::after{
@@ -11,6 +9,8 @@
     font-size: 62.5%;
 }
 
+/* ************************** */
+
 li{
     list-style: none;
 }
@@ -18,6 +18,30 @@ li{
 a{
     text-decoration: none;
 }
+
+button{
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+/* ************************** */
+
+.background-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background-image__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+    vertical-align: middle;
+}
+
+/* ************************** */
 
 .visually-hidden{
     position: absolute;
@@ -27,6 +51,8 @@ a{
     clip: rect(0 0 0 0);
 }
 
+/* ************************** */
+
 .page__body{
     position: relative;
     display: flex;
@@ -35,12 +61,16 @@ a{
     z-index: 0;
 }
 
+/* ************************** */
+
 .container{
     max-width: 1045px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: content-box;
 }
+
+/* ************************** */
 
 .section-head{
     text-align: center;
@@ -74,11 +104,10 @@ a{
     color: #737373;
 }
 
-button{
-    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
-}
+/* ************************** */
 
 /* Header */
+
 .header{
     position: absolute;
     left: 0;
@@ -102,6 +131,8 @@ button{
     text-decoration: none;
     margin-right: 131px;
 }
+
+/* ************************** */
 
 .menu{
     display: flex;
@@ -181,50 +212,36 @@ button{
     width: 100%;
     transform: rotate(-45deg);
 }
+/* ************************** */
 
-/* ########## ** MAIN ** ########## */
+/* Main */
 
 .main{
     flex: 1 1 auto;
     z-index: 1;
 }
 
-/* Intro */
-.background-image{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+/* ************************** */
 
-.background-image__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top right;
-    vertical-align: middle;
-}
+/* Intro */
 
 .intro{
     position: relative;
     background: #eee;
     z-index: 2;
 }
-
 .intro__body{
     padding: 184px 0 191px;
 }
-
-.offer{
+.intro__offer{
       max-width: 398px;
 }
+
+/* ************************** */
 
 .offer>*:not(:last-child){
     margin-bottom: 35px;
 }
-
 .offer__title{
     font-weight: 800;
     font-size: 5.8rem;
@@ -232,7 +249,6 @@ button{
     letter-spacing: 0.2px;
     color: #252B42;
 }
-
 .offer__subtitle{
     font-weight: 500;
     font-size: 2rem;
@@ -244,7 +260,6 @@ button{
 .offer__buttons>*:not(:last-child){
     margin-right: 10px;
 }
-
 .offer__button{
     border: none;
     background: none;
@@ -253,117 +268,114 @@ button{
     line-height: 200%;
     border-radius: 37px;
     padding: 10px 36px;
-    cursor: pointer;
 }
-
 .offer__button_bg{
     background: #FF7B47;
     color: #fff;
 }
-
-.offer__button_border{
+.offer__button_br{
     border: 1px solid #0D5C63;
     color: #0D5C63;
 }
 
+/* ************************** */
+
 /* Services */
+
 .services{
     background: #FAFAFA;
     margin-top: -110px;
 }
-
-.services__body{
+.services__inner{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: -15px;
     z-index: auto;
 }
-
-.service-card{
+.services__card{
+    margin: 15px;
     width: calc(100% / 3 - 30px);
+}
+/* ****************** */
+.card-services{
     display: flex;
     flex-direction: column;
-    margin: 15px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     background: #fff;
     padding: 40px 35px;
     z-index: 3;
 }
-
-.service-card>*:not(:last-child){
+.card-services>*:not(:last-child){
     margin-bottom: 10px;
 }
-
-.service-card__img{
+.card-services__img{
     width: 48px;
     height: 48px;
 }
-
-.service-card__title{
+.card-services__title{
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
 }
-
-.service-card__text{
+.card-services__text{
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
 }
-
-.service-card_active{
+.card-services_active{
     background: #0D5C63;
 }
-
-.service-card_active>*{
+.card-services_active>*{
     color: #fff;
 }
 
+/* ************************** */
+
 /* Features */
+
 .features{
     padding: 80px 0;
     background: #FAFAFA;
 }
-
-.features-list{
+.features__inner{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: -15px;
 }
-
-.features-list__card{
+.features__card{
     width: calc(100% / 4 - 30px);
     margin: 15px;
+}
+
+/* ************ */
+
+.card-features{
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     padding: 30px;
     background: #fff;
     text-align: center;
 }
-
-.features-list__card>*:not(:last-child){
+.card-features>*:not(:last-child){
     margin-bottom: 10px;
 }
-
-.features-list__img{
+.card-features__img{
     width: 48px;
     height: 48px;
 }
-
-.features-list__title{
+.card-features__title{
     font-weight: 700;
     font-size: 4rem;
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #252B42;
 }
-
-.features-list__text{
+.card-features__text{
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 150%;
@@ -371,35 +383,35 @@ button{
     color: #737373;
 }
 
+/* ************************** */
+
 /* Advances */
+
 .advances{
     padding: 125px 0 80px;
     background: #FAFAFA;
 }
-
-.advances__body{
+.advances__inner{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: -15px;
 }
-
-.advances__advance-card{
-    display: inline-block;
+.advances__card{
     width: calc(100% / 4 - 30px);
     margin: 15px;
 }
 
-.advance-card{
+/* ************ */
+
+.card-advances{
     background: #fff;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
-
-.advance-card__body{
+.card-advances__body{
     padding: 30px;
 }
-
-.advance-card__title{
+.card-advances__title{
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 150%;
@@ -407,26 +419,22 @@ button{
     color: #252B42;
     margin-bottom: 15px;
 }
-
-.advance-card__text{
+.card-advances__text{
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
 }
-
-.advance-card__img{
-
-}
-
-.advance-card__img img{
+.card-advances__img img{
     width: 100%;
     height: 138px;
     object-fit: cover;
     object-position: center center;
     vertical-align: middle;
 }
+
+/* ************************** */
 
 /* About */
 .about{
@@ -544,6 +552,8 @@ button{
     color: #737373;
 }
 
+/* ************************** */
+
 /* Clients */
 .clients{
     background: #FAFAFA;
@@ -571,27 +581,25 @@ button{
     margin: 15px;
 }
 
-/* Fallback */
-.fallback{
+/* ************************** */
+
+/* Fullback */
+
+.fullback{
     background: #FAFAFA;
     padding-top: 20px;
-    position: relative;
 }
-.fallback__line{
+.fullback__inner{
+    padding: 0 30px;
+}
+.fullback__line{
     padding-bottom: 77px;
     background: #252B42;
-    transform: translateY(-60px);
-    position: relative;
-    z-index: 1;
 }
 
-.fallback__body{
-    padding: 0 30px;
-    position: relative;
-    z-index: 2;
-}
+/* ************ */
 
-.form-sub{
+.form-fullback{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -600,8 +608,7 @@ button{
     border-radius: 2px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
-
-.form-sub__title{
+.form-fullback__title{
     max-width: 266px;
     font-weight: 700;
     font-size: 2.4rem;
@@ -609,16 +616,13 @@ button{
     letter-spacing: 0.1px;
     color: #FFFFFF;
 }
-
-.form-sub__input-block{
+.form-fullback__input-block{
     width: 450px;
     margin-left: auto;
     position: relative;
     display: flex;
-    align-itrems: stretch;
 }
-
-.form-sub__input{
+.form-fullback__input{
     width: 100%;
     padding: 15px 20px;
     font-weight: 400;
@@ -629,8 +633,7 @@ button{
     border-radius: 5px;
     border: none;
 }
-
-.form-sub__button{
+.form-fullback__button{
     position: absolute;
     top: 0;
     right: 0;
@@ -647,6 +650,7 @@ button{
     cursor: pointer;
 }
 
+/* ************************** */
 
 /* Contacts */
 .contacts{
