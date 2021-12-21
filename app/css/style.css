@@ -426,6 +426,7 @@ button{
 }
 .about__inner{
     display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
 .about__col{
@@ -437,9 +438,6 @@ button{
 
 /* ************ */
 
-.about__video{
-    min-width: 597px;
-}
 .video{
     position: relative;
     width: 100%;
@@ -523,17 +521,16 @@ button{
 /* ************************** */
 
 /* Clients */
+
 .clients{
     background: #FAFAFA;
 
 }
-
-.clients__body{
+.clients__inner{
     position: relative;
     padding: 60px 0;
 }
-
-.clients-list{
+.images-clients{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -542,10 +539,7 @@ button{
     padding: 0 20px;
     box-sizing: content-box;
 }
-
-.clients-list__item{
-    display: flex;
-    justify-content: center;
+.images-clients__img{
     margin: 15px;
 }
 
@@ -556,13 +550,29 @@ button{
 .fullback{
     background: #FAFAFA;
     padding-top: 20px;
+    position: relative;
 }
 .fullback__inner{
-    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 50px;
+    margin: 0 30px;
+    background: #17213C;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    position: relative;
+    z-index: 2;
+}
+.fullback__form{
+    margin-left: auto;
+    flex-basis: 450px;
 }
 .fullback__line{
     padding-bottom: 77px;
     background: #252B42;
+    margin-top: -67px;
+    position: relative;
+    z-index: 1;
 }
 
 /* ************ */
@@ -571,10 +581,7 @@ button{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 50px;
-    background: #17213C;
     border-radius: 2px;
-    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 .form-fullback__title{
     max-width: 266px;
@@ -585,27 +592,24 @@ button{
     color: #FFFFFF;
 }
 .form-fullback__input-block{
-    width: 450px;
-    margin-left: auto;
-    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
 }
 .form-fullback__input{
-    width: 100%;
+    flex-grow: 1;
     padding: 15px 20px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 200%;
     letter-spacing: 0.2px;
     color: #737373;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     border: none;
 }
 .form-fullback__button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
     font-weight: 400;
     padding: 0 22px;
     border: none;
@@ -615,7 +619,6 @@ button{
     letter-spacing: 0.2px;
     color: #fff;
     border-radius: 0 5px 5px 0;
-    cursor: pointer;
 }
 
 /* ************************** */
@@ -685,49 +688,40 @@ button{
     z-index: 2;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 30%);
 }
-.contacts__contact-card_active *{
+.card-contacts_active *{
     color: #fff;
     border-color: #fff;
 }
 
 /* ************************** */
 
-/* Footer */
-.footer{
-    z-index: 2;
-}
-.footer-fallback{
+/* Offer-line */
+
+.offer-line{
+    background: #FAFAFA;
     padding: 40px 0;
-    background: #fff;
 }
-
-.footer-fallback__inner{
+.offer-line__inner{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
 }
-
-.footer-fallback__content>*:not(:last-child){
-    margin-bottom: 10px;
-}
-
-.footer-fallback__title{
+.offer-line__title{
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
+    margin-bottom: 10px;
 }
-
-.footer-fallback__subtitle{
+.offer-line__subtitle{
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #737373;
 }
-
-.footer-fallback__button{
+.offer-line__button{
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 200%;
@@ -741,6 +735,11 @@ button{
     margin-left: auto;
     cursor: pointer;
 }
+
+/* ************************** */
+
+/* Footer */
+
 
 .footer-copyring{
     padding: 25px 0;
