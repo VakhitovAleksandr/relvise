@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relvise</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -22,7 +24,7 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__body">
+            <div class="header__inner">
                 <a href="./" class="header__logo">Relvise</a>
                 <nav class="nav">
                     <button class="burger"><span></span></button>
@@ -64,7 +66,7 @@
         </section>
 
         <!-- Services -->
-        <section class="section services">
+        <section class="services">
             <div class="container">
 
                 <!-- ******************************** -->
@@ -205,7 +207,7 @@
         </section>
 
         <!-- About -->
-        <section class="about">
+        <section class="section about">
             <div class="container">
 
                 <!-- ******************************** -->
@@ -275,12 +277,30 @@
 
                 <div class="clients__inner">
                     <div class="images-clients">
-                        <img class="images-clients__img" src="img/svg/hooli.svg" alt="hooli">
-                        <img class="images-clients__img" src="img/svg/lya.svg" alt="lya">
-                        <img class="images-clients__img" src="img/svg/leaflet.svg" alt="leaflet">
-                        <img class="images-clients__img" src="img/svg/stripe.svg" alt="stripe">
-                        <img class="images-clients__img" src="img/svg/aws.svg" alt="aws">
-                        <img class="images-clients__img" src="img/svg/robo.svg" alt="robo">
+                        <div class="images-clients__item">
+                            <img class="images-clients__img" src="img/svg/hooli.svg" alt="hooli">
+                        </div>
+
+                        <div class="images-clients__item">
+                            <img class="images-clients__img" src="img/svg/lya.svg" alt="lya">
+                        </div>
+
+                        <div class="images-clients__item">
+                            <img class="images-clients__img" src="img/svg/leaflet.svg" alt="leaflet">
+                        </div>
+
+                        <div class="images-clients__item">
+                            <img class="images-clients__img" src="img/svg/stripe.svg" alt="stripe">
+                        </div>
+
+                        <div class="images-clients__item">
+                            <img class="images-clients__img" src="img/svg/aws.svg" alt="aws">
+                        </div>
+
+                        <div class="images-clients__item">
+                            <img class="images-clients__img" src="img/svg/robo.svg" alt="robo">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -442,13 +462,15 @@
 
         <div class="footer-copyring">
             <div class="container">
-                <div class="footer-copyring__body">
+                <div class="footer-copyring__inner">
                     <p class="footer-copyring__text">Made With Love By Figmaland All Right Reserved</p>
-                    <ul class="footer-copyring__links">
-                        <li class="footer-copyring__link"></li>
-                        <li class="footer-copyring__link"></li>
-                        <li class="footer-copyring__link"></li>
-                    </ul>
+                    <div class="footer-copyring__links">
+                        <a href="#" class="footer-copyring__link"><img src="./img/svg/facebook.svg" alt="facebook"></a>
+                        <a href="#" class="footer-copyring__link"><img src="./img/svg/instagram.svg"
+                                alt="instagram"></a>
+                        <a href="#" class="footer-copyring__link"><img src="./img/svg/twitter.svg" alt="twitter"></a>
+                        <a href="#" class="footer-copyring__link"><img src="./img/svg/youtube.svg" alt="youtube"></a>
+                    </div>
                 </div>
             </div>
         </div>

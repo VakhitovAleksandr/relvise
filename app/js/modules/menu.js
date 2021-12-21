@@ -1,6 +1,6 @@
 function toggleMenu(){
     let burger = document.querySelector('.burger');
-    let navBlock = document.querySelector('.nav');
+    let navBlock = document.querySelector('.menu');
     if(burger || navBlock){
         burger.addEventListener('click', ()=>{
             navBlock.classList.toggle('active');

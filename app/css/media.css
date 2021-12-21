@@ -1,178 +1,234 @@
 
 @media (max-width: 991.98px) {
-    .section{
-        padding: 80px 0;
-    }
-    .page__body{
-        font-size: 60.5%;
-    }
-    .header__body{
+
+    /* header */
+
+    .header__inner{
         justify-content: space-between;
     }
-    .features-list__card{
-        width: calc(100% / 4 - 30px);
-    }
-    .advances{
+
+    /* ************************** */
+
+    /* Srction */
+    .section{
         padding: 80px 0;
     }
-    .advances__advance-card{
-        width: calc(100% / 4 - 30px);
-    }
+
+
 }
 @media (max-width: 767.98px) {
-    .main{
-        z-index: -2;
-    }
+
+    /* Header */
     .header{
         background: #fff;
+    }
+
+    .header__inner{
         z-index: auto;
     }
-    .section{
-        padding: 40px 0;
-    }
+
+    /* ************************** */
+
+    /* Nav */
     .burger{
         display: block;
     }
-    .nav{
+    .menu{
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100vh;
-        background: #252B42;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transform: translateY(-100%);
-        z-index: -1;
-        transition: 0.3s;
-    }
-    .nav.active{
-        transform: translateY(0);
-    }
-    .menu{
+        background: #0D5C63;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    }
+    .menu.active{
+        transform: translateY(-100%);
     }
     .menu>*:not(:last-child){
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .menu__link{
-        color: #fff;
-        font-size: 2.2rem;
+        color: #fafafa;
+        font-size: 1.8rem;
     }
-    .service-card{
+
+    /* ************************** */
+
+    /* Services */
+    .services__card{
         width: calc(100% / 2 - 30px);
     }
 
-    .features-list__card{
+    /* ************************** */
+
+    /* Features */
+    .features__card{
         width: calc(100% / 2 - 30px);
     }
 
-    .advances__advance-card{
+    /* ************************** */
+
+    /* Advances */
+    .advances__card{
         width: calc(100% / 2 - 30px);
     }
-    .clients-list{
-        justify-content: center;
+
+    /* ************************** */
+
+    /* About */
+    .about__col:nth-child(2){
+        padding-left: 60px;
+    }
+
+    /* ************************** */
+
+    /* Clients */
+    .images-clients{
         align-items: stretch;
     }
-    .clients-list__item{
+    .images-clients__item{
+        width: calc(100% / 3 - 30px);
         align-items: flex-end;
     }
-    .form-sub__input-block{
-        width: 100%;
+
+    /* ************************** */
+
+    /* Fuulback */
+    .fullback__form{
+       flex-basis: 100%;
+       margin-top: 20px;
     }
-    .form-sub__title{
-        margin-bottom: 20px;
-    }
-    .contacts__body{
+
+    /* ************************** */
+
+    /* Contacts */
+    .contacts__inner{
         margin: 0;
-    }
-    .contact-card{
-        padding: 43px 0;
     }
 }
 
 @media (max-width: 575.98px) {
-    .contact-card{
-        width: 100%;
-    }
-    .footer-fallback__body{
-        justify-content: center;
-    }
-    .footer-fallback__button{
-        margin: 0;
-    }
-    .footer-fallback__content{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-}
-@media (min-width: 320px) and (max-width: 575.98px) {
-    :root, .page__body{
-        font-size: 55%;
-    }
-    .section{
-        padding: 30px 0;
-    }
+
     .background-image{
-        opacity: 0.3;
+        opacity: 0.4;
     }
-    .offer{
-        max-width: 100%;
+
+    /* Section */
+    .section{
+        padding: 60px 0;
     }
-    .offer__buttons{
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+
+    /* ************************** */
+
+    /* About */
+    .about__col{
+        flex-basis: 100%;
     }
-    .offer__buttons>*:not(:last-child){
-        margin: 0;
-        margin-bottom: 10px;
+    .about__col:nth-child(2){
+        padding: 0;
+        margin-top: 20px;
     }
-    .services__body{
-        margin: 0;
-    }
-    .service-card{
+
+    .video{
+        position: relative;
         width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        background-color: #000;
     }
-    .features-list{
-        margin: 0;
-    }
-    .features-list__card{
-        width: 100%;
-    }
-    .advances__body{
-        margin: 0;
-    }
-    .advances__advance-card{
-        width: 100%;
-    }
-    .clients-list{
-        justify-content: center;
-        align-items: stretch;
-    }
-    .clients-list__item{
-        align-items: flex-end;
-    }
-    .form-sub__input-block{
-        width: 100%;
-    }
-    .form-sub__title{
-        margin-bottom: 20px;
-    }
-    .contacts__body{
-        margin: 0;
-    }
-    .contact-card{
-        padding: 43px 0;
-    }
-    .fallback__body{
+
+    /* ************************** */
+
+    /* Clients */
+    .images-clients{
         padding: 0;
     }
-    .form-sub{
+
+    /* ************************** */
+
+    /* Fullback */
+    .fullback__inner{
+        margin: 0;
+    }
+
+    /* ************************** */
+
+    /* Contacts */
+    .contacts__inner{
+        margin: -15px;
+    }
+    .card-contacts{
+        width: calc(100% / 2 - 30px);
+        margin: 15px;
+    }
+    .card-contacts_active{
+        padding: 53px 0;
+    }
+
+    /* ************************** */
+
+    /* Offer-line */
+    .offer-line__inner{
+        justify-content: center;
+        text-align: center;
+    }
+    .offer-line__button{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    /* Offer */
+    .intro__offer{
+        width: 100%;
+    }
+    .offer__title{
+        font-size: 4rem;
+    }
+    .offer__subtitle{
+        font-size: 1.5rem;
+
+    }
+
+    /* Services */
+    .services__card{
+        width: 100%;
+    }
+
+    .features__card{
+        width: 100%;
+    }
+
+    .advances__card{
+        width: 100%;
+    }
+
+    .fullback__inner{
         padding: 15px;
     }
+    .form-fullback__button{
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    .form-fullback__input{
+        border-radius: 5px;
+    }
+
+    .card-contacts{
+        width: 100%;
+    }
+
+    .footer-copyring__links{
+        margin-top: 15px;
+    }
+
 }
