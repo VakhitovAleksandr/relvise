@@ -21,6 +21,7 @@
     /* Header */
     .header{
         background: #fff;
+        z-index: auto;
     }
 
     .header__inner{
@@ -45,9 +46,10 @@
         align-items: center;
         justify-content: center;
         transition: 0.2s;
+        z-index: -1;
     }
     .menu.active{
-        transform: translateY(-100%);
+        transform: translateY(0%);
     }
     .menu>*:not(:last-child){
         margin: 0;
