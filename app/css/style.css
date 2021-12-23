@@ -108,6 +108,7 @@ button{
     top: 0;
     width: 100%;
     z-index: 2;
+    transition: transform 0.5s;
 }
 .header__inner{
     min-height: 104px;
@@ -122,6 +123,14 @@ button{
     color: #252B42;
     text-decoration: none;
     margin-right: 131px;
+}
+.header.fixed{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+
 }
 
 /* ************************** */
