@@ -1,29 +1,30 @@
 
-function menuScrollTo(){
-    let menuLinks = document.querySelectorAll('.menu a');
+function menuScrollTo() {
+    let menu = document.querySelector('.menu');
 
-    menuLinks.forEach(link => {
-        link.addEventListener('click', linkClicked);
+    menu.addEventListener('click', function (e) {
+        e.preventDefault()
+        let target = event.target;
+        if (target.tagName != 'A') {
+            return;
+        } else {
+            scrollToId(target.hash);
+        }
     });
 }
 
-function linkClicked(e){
-    e.preventDefault();
-    scrollToId(this.hash);
-}
 
-function scrollToId(id){
+function scrollToId(id) {
     let target = document.querySelector(id);
-    if('scrollBehavior' in document.body.style){
+    let headerHeight = document.querySelector('.header').offsetHeight;
+    if ('scrollBehavior' in document.body.style) {
         window.scrollTo({
-        top: target.offsetTop,
-        behavior: 'smooth'
+            top: target.offsetTop - headerHeight,
+            behavior: 'smooth'
         });
     } else {
         window.scrollTo(0, target.offsetTop)
     }
-
-
 }
 
 export default menuScrollTo();

@@ -124,7 +124,11 @@ button{
     text-decoration: none;
     margin-right: 131px;
 }
+.header.t{
+    transform: translateY(-100%);
+}
 .header.fixed{
+    transform: translateY(0);
     background: #fff;
     position: fixed;
     top: 0;
@@ -151,10 +155,7 @@ button{
     color: #737373;
     border: solid 3px transparent;
 }
-.menu__link:focus{
-    outline: none;
-    box-shadow: 0 0 0 2px #252B42;
-}
+
 .burger{
     width: 23px;
     height: 14px;
