@@ -108,7 +108,7 @@ button{
     top: 0;
     width: 100%;
     z-index: 2;
-    transition: transform 0.5s;
+    transition: 0.3s;
 }
 .header__inner{
     min-height: 104px;
@@ -124,15 +124,12 @@ button{
     text-decoration: none;
     margin-right: 131px;
 }
-.header.t{
+.header.tr{
     transform: translateY(-100%);
 }
-.header.fixed{
-    transform: translateY(0);
+.header.fix{
     background: #fff;
     position: fixed;
-    top: 0;
-    width: 100%;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 
 }
