@@ -3,6 +3,7 @@ import toggleMenu from './modules/menu.js'
 import visiblePopup from './modules/popup.js'
 import menuScrollTo from './modules/menuScrollTo.js'
 import fixHeaderScrolling from './modules/headerScrolling.js'
+import formProcessing from './modules/forms.js'
 
 
 
@@ -13,4 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
     findVideos();
     menuScrollTo();
     fixHeaderScrolling();
+    formProcessing();
 });
