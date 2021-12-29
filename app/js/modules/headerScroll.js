@@ -1,11 +1,10 @@
-function fixHeaderScrolling() {
+export function headerScroll() {
     let header = document.querySelector('.header');
-    let headerH = header.offsetHeight;
+    window.addEventListener('scroll', handlerScroll);
 
-    window.addEventListener('scroll', handler);
+    function handlerScroll() {
 
-    function handler() {
-        if (window.pageYOffset >= headerH) {
+        if (window.pageYOffset >= header.offsetHeight) {
             if (!header.classList.contains('fix')) {
                 header.classList.add('tr');
                 header.addEventListener('transitionend', hand);
@@ -20,23 +19,3 @@ function fixHeaderScrolling() {
         }
     }
 }
-
-
-
-
-
-
-export default fixHeaderScrolling();
-
-
-/*
-loop
--
-
-event
--scroll
-
-stack
--handler
-
-*/
